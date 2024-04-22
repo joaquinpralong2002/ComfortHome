@@ -31,16 +31,17 @@ footer {
 }
 
 #ofertas {
-    color: green;
+    color: black;
     font-weight: bold;
 }
 
 #parrafo {
-    color: darkgreen;
+    color: black;
     font-weight: 900;
 }
 
 #h3 {
+    color: black;
     font-weight: 600;
 }
 
@@ -132,4 +133,7 @@ footer {
     background-color: antiquewhite;
 }
 
-
+#boton-producto:hover {
+    color: #92817A;
+    transform: scale(1.05);
+}

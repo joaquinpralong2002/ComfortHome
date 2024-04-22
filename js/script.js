@@ -10,7 +10,7 @@ function onFormSubmit(){
 
     alert("Gracias "+ fname + " " + lname +"! registramos su mensaje: " + message);
     
+    //mas adelante persistimos en una BBDD
+
     history.back();
-}; 
-
-
+};

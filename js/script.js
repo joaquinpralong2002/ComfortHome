@@ -12,5 +12,5 @@ function onFormSubmit(){
     
     //mas adelante persistimos en una BBDD
 
-    history.back();
+    window.location.href="index.html";
 };

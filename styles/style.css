@@ -1,20 +1,135 @@
-main{
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+.boton-personalizado:hover {
+    background-color: antiquewhite;
+}
+
+#boton-ofertas:hover{
+    background-color: antiquewhite;
+}
+
+main {
     background-color: #FFFBFF;
 }
 
-header{
+header {
     background-color: #F1DABF;
 }
 
-#nav-secundario{
+#nav-secundario {
     background-color: antiquewhite;
 }
 
-#categorias{
-    margin-bottom: 5%;
+footer {
+    background-color: #FFFBFF;
 }
 
 
-#footer-copyright{
+#footer-copyright {
     background-color: antiquewhite;
 }
+
+#ofertas {
+    color: green;
+    font-weight: bold;
+}
+
+#parrafo {
+    color: darkgreen;
+    font-weight: 900;
+}
+
+#h3 {
+    font-weight: 600;
+}
+
+
+.parrafo-container {
+    display: inline-block;
+    /* Hace que el contenedor se ajuste al tamaño del contenido */
+    background-color: antiquewhite;
+    /* Color de fondo celeste claro */
+    padding: 1px 5px;
+    /* Ajusta el espacio alrededor del texto */
+    border-radius: 10px;
+    /* Borde redondeado */
+}
+
+#informacion-empresa {
+    padding: 60px 0;
+    font-family: "Lora", serif;
+}
+
+/* Estilos para el título principal */
+#informacion-empresa h2 {
+    font-size: 2.5rem;
+    color: #333;
+    /* Color del texto */
+    font-family: "Lora", serif;
+}
+
+/* Estilos para el subtítulo */
+#informacion-empresa h3 {
+    font-size: 1.8rem;
+    color: #555;
+    /* Color del texto */
+}
+
+#fundadores {
+    font-family: "Lora", serif;
+}
+
+/* Estilos para las tarjetas */
+.card {
+    border: none;
+    /* Elimina el borde de las tarjetas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Agrega sombra */
+    background-color: antiquewhite;
+    /* Color de fondo de las tarjetas */
+}
+
+.card-title {
+    font-size: 1.2rem;
+}
+
+
+/* Estilos para la lista de valores */
+.card ul {
+    font-size: 1.1rem;
+    color: #555;
+    /* Color del texto de la lista */
+    margin-top: 20px;
+    /* Espacio superior */
+}
+
+.card ul li {
+    list-style: none;
+    /* Elimina los puntos de la lista */
+    padding-left: 20px;
+    /* Espacio a la izquierda */
+    position: relative;
+}
+
+.card ul li:before {
+    content: '\2022';
+    /* Agrega un círculo como viñeta */
+    position: absolute;
+    left: 0;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    /* Aumenta ligeramente el tamaño al pasar el cursor */
+    transition: transform 0.3s ease;
+    /* Transición suave */
+    background-color: antiquewhite;
+    /* Cambia el color de fondo al pasar el cursor */
+}
+
+#boton-busqueda:hover {
+    background-color: antiquewhite;
+}
+
+

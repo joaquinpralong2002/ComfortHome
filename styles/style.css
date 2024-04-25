@@ -132,7 +132,19 @@ footer {
 }
 
 .carousel-control-prev{
-    color: antiquewhite;
+    color: black;
+}
+
+.carousel-control-prev:hover{
+    color: black;
+}
+
+.carousel-control-next{
+    color: black;
+}
+
+.carousel-control-next:hover{
+    color: black;
 }
 
 #boton-producto:hover {

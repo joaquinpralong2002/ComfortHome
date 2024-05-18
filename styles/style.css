@@ -7,6 +7,7 @@
 
 #boton-ofertas:hover{
     background-color: antiquewhite;
+
 }
 
 main {
@@ -150,4 +151,8 @@ footer {
 #boton-producto:hover {
     color: #92817A;
     transform: scale(1.05);
+}
+
+.animate__flash:hover{
+    transform: scale(110%);
 }

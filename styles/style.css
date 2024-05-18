@@ -8,6 +8,7 @@
 
 #boton-ofertas:hover{
     background-color: antiquewhite;
+    transform: scale(110%);
 }
 
 main {
@@ -169,3 +170,4 @@ footer {
     font-weight: 700;
     font-size: medium;
 }
+

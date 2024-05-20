@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
 @font-face {
     font-family: 'botonCompra';
     src: url('fonts/jmh_typewriter/JMH\ Typewriter.otf') format('truetype');
 }
 
 
-#boton-ofertas:hover{
+#boton-ofertas:hover {
     background-color: antiquewhite;
     transform: scale(110%);
 }
@@ -133,23 +136,23 @@ footer {
     background-color: antiquewhite;
 }
 
-.carousel-control-prev{
+.carousel-control-prev {
     color: black;
 }
 
-.carousel-control-prev:hover{
+.carousel-control-prev:hover {
     color: black;
 }
 
-.carousel-control-next{
+.carousel-control-next {
     color: black;
 }
 
-.carousel-control-next:hover{
+.carousel-control-next:hover {
     color: black;
 }
 
-#boton-producto{
+#boton-producto {
     width: 15rem;
     height: 3rem;
     font-size: large;
@@ -160,14 +163,68 @@ footer {
     transform: scale(1.10);
 }
 
-.categorias{
+.categorias {
     background-color: white;
     border-radius: 5%;
 }
 
-.botoncompra{
+.botoncompra {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: medium;
 }
 
+.main-inicio-sesion {
+    margin: 0;
+    padding: 0;
+    background-image: url(/images/imagen-fondo-inicio-sesion.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+#form-inicio-sesion {
+    background: rgba(255, 255, 255, 0.85);
+    transform: none;
+}
+
+.boton-inicio-sesion {
+    border: 0 solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+    outline: 1px solid;
+    outline-color: #92817A;
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50%;
+    height: 30%;
+}
+
+.boton-inicio-sesion:hover {
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+    outline-color: rgba(255, 255, 255, 0);
+    transform: scale(110%);
+    outline-offset: 15px;
+}
+
+#form-email {
+    height: 3rem;
+}
+
+#form-contrasenia {
+    height: 3rem;
+}
+
+.form-label {
+    font-size: larger;
+}
+
+#titulo-iniciar-sesion {
+    font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}

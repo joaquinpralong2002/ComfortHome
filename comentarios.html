@@ -40,7 +40,7 @@
                     <dl class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            <img src="./images/perfil.png" alt="perfil" width="50">
+                            <img  id="imgPerfil" src="./images/perfil.png" alt="perfil" width="50">
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="iniciar-sesion.html">Iniciar sesión</a></li>
@@ -73,8 +73,10 @@
 
     <main>
         <section>
-            <button type="button" id="buttonComments" onclick="callAPI()">Mostrar Comentarios</button>
-            <div id="comments"></div>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center" style="margin-top: 2%; margin-bottom: 2%;">
+               <button type="button" id="buttonComments" onclick="callAPI()" class="btn btn-lg px-4 gap-3 btn-outline-dark animate__animated animate__flash" id="boton-ofertas"> Ver comentarios</button>
+            </div>
+            <div id="comments" class="text-center text-lg-start text-muted"></div>
         </section>
     </main>
 

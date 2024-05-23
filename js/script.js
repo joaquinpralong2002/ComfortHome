@@ -41,7 +41,9 @@ function validateForm()
     }
 
     sessionStorage.setItem("authorized", res);
-    
+    sessionStorage.setItem("usermail", email);
+    changeUser();
+
 } 
 
 function callAPI()
@@ -62,7 +64,7 @@ function callAPI()
                 data.comments.forEach(comment => {
                 console.log(comment.body); // Muestra cada comentario
                 html += [
-                    '<p>Comentario: '+comment.body+' usuario: '+comment.user.username,
+                    '<p><b>Comentario: </b>'+comment.body+' <b>usuario: </b>'+comment.user.username,
                     '</p>'
                     ].join('\n');
                 
@@ -76,6 +78,26 @@ function callAPI()
     else
     {
         console.log("No esta autorizado a usar la api");
-        alert("No esta autorizado a usar la api");
+        alert("No esta autorizado a ver lo comentarios. Iniciar sesión (admin@gmail.com/123456)");
     }
+}
+
+window.addEventListener("load", function (event) {
+   changeUser();
+  });   
+
+function changeUser(){
+    var src;
+    var usermail;    
+    if(sessionStorage.getItem("authorized")=="true"){
+        src = "./images/user.png";
+        usermail = sessionStorage.getItem("usermail");
+    }else{
+        src = "./images/perfil.png";
+        usermail = "Iniciar Sesión";
+        
+    }
+    var img = this.document.getElementById("imgPerfil");
+    img.src = src;
+    img.title = usermail;
 }

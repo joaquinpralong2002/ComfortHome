@@ -32,7 +32,8 @@ function validateForm()
         res = (EMAIL_HARDCODE==email && PASSWORD_HARDCODE==password);
         if(res)
         {
-            alert("DATOS CORRECTOS");
+            document.getElementById('form-inicio-sesion').style.display = 'none';
+            alert("DATOS CORRECTOS, esta autorizado a ver los comentarios");
         }
         else
         {
